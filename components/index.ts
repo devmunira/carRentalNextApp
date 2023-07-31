@@ -4,6 +4,7 @@ import Header from './Layout/Header';
 import Footer from './Layout/Footer';
 import SearchArea from './SearchArea';
 import FilterArea from './FilterArea';
+import CarCard from './CarCard';
 import CustomAutoSelect from './CustomAutoSelect';
 
 
@@ -15,4 +16,5 @@ export {
     SearchArea,
     FilterArea,
     CustomAutoSelect,
+    CarCard,
 }

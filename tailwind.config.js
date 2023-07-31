@@ -14,10 +14,10 @@ module.exports = {
       colors: {
         "black-100": "#2B2C35",
         "primary-green": {
-          DEFAULT: "#5BB318",
-          100: "#7DCE13",
+          DEFAULT: "#095474",
+          100: "#e0edef",
         },
-        "secondary-orange": "#EAE509",
+        "secondary-orange": "#caf0f8",
         "light-white": {
           DEFAULT: "rgba(59,60,152,0.03)",
           100: "rgba(59,60,152,0.02)",
@@ -27,7 +27,6 @@ module.exports = {
       backgroundImage: {
         'pattern': "url('/pattern.png')",
         'hero-bg': "url('/pattern.svg')",
-        'bannar-bg' : "url('/bannar.jpg')"
       }
     },
   },

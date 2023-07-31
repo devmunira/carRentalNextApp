@@ -1,15 +1,16 @@
 import { getAllCars } from '@/api'
-import { FilterArea, Hero, SearchArea } from '@/components'
+import { CarCard, FilterArea, Hero, SearchArea } from '@/components'
 import Image from 'next/image'
 
 
 export default async function Home() {
   const Cars = await getAllCars();
+  console.log(Cars)
   return (
     <main className="overflow-hidden">
         <Hero></Hero>
         {/* Main Product Section Start */}
-        <div className='py-5 px-6 sm:px-16 flex flex-col justify-start items-start'>
+        <div className='py-5 px-6 sm:px-16 flex flex-col padding-x justify-start items-start'>
             {/* Section Heading */}
             <div className='flex flex-col flex-wrap justify-start items-start gap-5'>
               <h1 className='font-extrabold text-[40px] sm:text-[36px]'>Car Catelogue</h1>
@@ -24,7 +25,7 @@ export default async function Home() {
               </div>
             </div>
             {/* Produc Area */}
-            <section className='px-6 sm:px-16 py-10 w-full'>
+            <section className='py-5 w-full'>
                 {
                   (!Array.isArray(Cars) || Cars.length < 1 || !Cars) ?        
                   <div className='home__error-container'>
@@ -32,9 +33,18 @@ export default async function Home() {
                     <h2 className='text-primary-green capitalize text-xl font-bold'>Sorry, no car found!</h2>
                     <p>{Cars?.message}</p>
                  </div> :
-                  <div className='flex justify-between items-center gap-10 w-full sm:flex-col max-w-1/4 sm:max-w-1/1'>
-                    
+
+                  <div className='flex items-center flex-wrap justify-start gap-4 w-full'>
+                      {
+                        Cars.map((item,index) => (
+                          <CarCard 
+                          car={item} 
+                          key={index}></CarCard>
+                        ))
+                      }
                   </div>
+
+
                 }
             </section>
         </div>

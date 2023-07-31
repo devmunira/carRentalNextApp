@@ -8,7 +8,8 @@ const Hero = () => {
     // handle Scroll func for hero  section btn
     const handleScroll = () => {}
     return (
-        <div className='hero'>
+        <div className='hero bg-secondary-orange' style={{clipPath : 'polygon(0 0, 100% 0, 100% 83%, 0% 100%)'
+    }}>
             <div className='flex-1 padding-x pt-36'>
                 <h1 className='hero__title'>
                     Find , book or rent a car - quickly & easily
@@ -24,7 +25,7 @@ const Hero = () => {
             <div className='hero__image-container'>
                 <div className='hero__image'>
                     <Image
-                        src={'/hero.png'}
+                        src={'/toyota-bg.png'}
                         alt='A beautiful Cars Image from Car Hunt'
                         fill
                         className='object-contain'></Image>

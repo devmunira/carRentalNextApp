@@ -3,7 +3,8 @@ export interface CustomButtonProps {
     title : string,
     handleClick?: React.MouseEventHandler < HTMLButtonElement >,
     customStyles?: string,
-    btnType?: "button" | "submit"
+    btnType?: "button" | "submit",
+    textStyles?: string,
 }
 
 // Manufecturar ComboBox Props Types
@@ -14,8 +15,8 @@ export interface ManufecturerComboBoxTypes {
 
 // calculate car rent
 export interface calculateCarRentProps {
-    mpg : number,
-    carYear : number
+    mpg : number;
+    year : number
 }
 
 
