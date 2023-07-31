@@ -32,8 +32,8 @@ export default async function Home() {
                     <h2 className='text-primary-green capitalize text-xl font-bold'>Sorry, no car found!</h2>
                     <p>{Cars?.message}</p>
                  </div> :
-                  <div>
-                    We have cars
+                  <div className='flex justify-between items-center gap-10 w-full sm:flex-col max-w-1/4 sm:max-w-1/1'>
+                    
                   </div>
                 }
             </section>

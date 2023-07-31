@@ -15,7 +15,7 @@ export async function getAllCars() {
 
     try {
         const response = await axios.request(options);
-        return response.data;
+        return response.data.data;
     } catch (error) {
         console.error(error);
     }
