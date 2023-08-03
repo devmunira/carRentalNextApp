@@ -18,7 +18,7 @@ const ustomAutoSelect : React.FC<ManufecturerComboBoxTypes> = ({manufecturer , s
 
 
   return (
-    <div className='search-manufecturer'>
+    <div className='search-manufacturer'>
        <Combobox value={manufecturer} onChange={setmanufecturer}>
         <div className='realtive w-full'>
         <Combobox.Button className='absolute top-[14px]'>
@@ -78,7 +78,6 @@ const ustomAutoSelect : React.FC<ManufecturerComboBoxTypes> = ({manufecturer , s
         </div>
     </Combobox>
     </div>
-   
   )
 }
 

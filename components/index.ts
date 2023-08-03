@@ -6,6 +6,7 @@ import SearchArea from './SearchArea';
 import FilterArea from './FilterArea';
 import CarCard from './CarCard';
 import CustomAutoSelect from './CustomAutoSelect';
+import Model from './Model';
 
 
 export {
@@ -17,4 +18,5 @@ export {
     FilterArea,
     CustomAutoSelect,
     CarCard,
+    Model
 }

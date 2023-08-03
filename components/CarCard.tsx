@@ -4,7 +4,7 @@ import {singleCarProps} from '@/types'
 import Image from 'next/image';
 import React, {useState} from 'react'
 import heroImage from '../public/hero.png'
-import {CustomButton} from '.';
+import {CustomButton, Model} from '.';
 import {calculateCarRent} from '@/api/Car/calculateRent';
 import {BsFuelPumpFill} from "react-icons/bs"
 import {GiFlatTire} from "react-icons/gi"
@@ -33,7 +33,12 @@ const CarCard = ({car} : {
 
     const carRent = calculateCarRent(city_mpg, year);
 
+    const handleToggle = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
+        <>
         <div className='car-card w-[325px]'>
 
             <div className='car-car__image flex justify-center w-full py-10'>
@@ -84,13 +89,20 @@ const CarCard = ({car} : {
                     </p>
                     <CustomButton 
                     title="View Deal"
-                    customStyles="bg-primary-green text-white text-[12px] font-bold rounded-sm shadow-sm "
+                    customStyles="bg-primary-green text-white text-[12px] font-bold rounded-sm shadow-sm"
+                    handleClick={handleToggle}
                     ></CustomButton>
                 </div>
 
             </div>
 
-        </div>
+            <Model
+            isOpen = {isOpen}
+            closeModal={() => setIsOpen(false)}
+            car={car}
+            ></Model>
+            </div>
+        </>
     )
 }
 

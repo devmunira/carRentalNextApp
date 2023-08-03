@@ -5,16 +5,15 @@ import Image from 'next/image'
 
 export default async function Home() {
   const Cars = await getAllCars();
-  console.log(Cars)
   return (
     <main className="overflow-hidden">
         <Hero></Hero>
         {/* Main Product Section Start */}
-        <div className='py-5 px-6 sm:px-16 flex flex-col padding-x justify-start items-start'>
+        <div className='py-5 px-10 sm:px-16 flex flex-col padding-x justify-start items-start'>
             {/* Section Heading */}
             <div className='flex flex-col flex-wrap justify-start items-start gap-5'>
-              <h1 className='font-extrabold text-[40px] sm:text-[36px]'>Car Catelogue</h1>
-              <p className='text-base text-gray-600'>Find your desire car from here. Best of Luck!</p>
+              <h1 className='font-extrabold text-[40px] sm:text-[36px]'>Available Cars</h1>
+              <p className='text-base text-gray-600'>Your Ideal Car Awaits: Discover Your Perfect Ride with Car Hunt.</p>
             </div>
             {/* Search Bar Area */}
             <div className='flex justify-between items-center w-full pt-10'>

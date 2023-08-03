@@ -35,3 +35,9 @@ export interface singleCarProps {
     transmission : string;
     year : number;
 }
+
+// Car details model props types
+export interface carDetailsProps {
+    isOpen : boolean,
+    setIsOpen : (isOpen : boolean) => void
+}

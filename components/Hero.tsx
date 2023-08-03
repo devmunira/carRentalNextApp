@@ -12,10 +12,10 @@ const Hero = () => {
     }}>
             <div className='flex-1 padding-x pt-36'>
                 <h1 className='hero__title'>
-                    Find , book or rent a car - quickly & easily
+                    Find the Perfect Car Rental for Your Adventure!
                 </h1>
                 <p className='hero__subtitle'>
-                    Streamline your car rental experience with our effortless booking process
+                  Unleash the Freedom of the Open Road: Your Ultimate Car Rental Destination
                 </p>
                 <CustomButton
                     title="Exlpore Now"
