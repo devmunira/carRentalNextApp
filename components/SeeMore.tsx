@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { CustomButton } from ".";
 
-const SeeMore = ({ pageNumber, isNext }) => {
+const SeeMore = ({ pageNumber = 0, isNext = false }) => {
   const router = useRouter();
   const handleNavigation = () => {
     // Calculate the new limit based on the page number and navigation type
@@ -12,7 +12,7 @@ const SeeMore = ({ pageNumber, isNext }) => {
     const searchParams = new URLSearchParams(window.location.search);
 
     // Set the specified search parameter to the given value
-    searchParams.set('limit', newLimit);
+    searchParams.set('limit', newLimit.toString());
 
     // Set the specified search parameter to the given value
     const newPathname = `${window.location.pathname}?${searchParams.toString()}`;

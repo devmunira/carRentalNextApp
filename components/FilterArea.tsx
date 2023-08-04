@@ -14,9 +14,9 @@ export default function FilterArea({ title, options }: filterProps) {
   const router = useRouter()
 
 
-  const updateQueryParams = (query: string, val: string) => {    
+  const updateQueryParams = (query: string, val: string | number) => {    
     const searchParams = new URLSearchParams(window.location.search);
-    searchParams.set(query, val);
+    searchParams.set(query, val.toString());
     const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
     router.push(newPathname, { scroll: false });
   };

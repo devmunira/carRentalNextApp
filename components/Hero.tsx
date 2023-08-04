@@ -3,7 +3,6 @@
 import React from 'react'
 import {CustomButton} from './'
 import Image from 'next/image';
-import scroll from "react-scroll"
 
 const Hero = () => {
     // handle Scroll func for hero  section btn
