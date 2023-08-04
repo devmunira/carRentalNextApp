@@ -1,11 +1,25 @@
 import axios from "axios";
 
-export async function getAllCars() {
+export async function getAllCars({make,model,year,limit,page,fuel}:{
+    make : string,
+    model : string,
+    year: number,
+    limit : number,
+    page:number,
+    fuel:string
+}) {
+
+
     const options = {
         method: 'GET',
         url: process.env.RAPID_API_URL,
         params: {
-            model: 'corolla'
+            model: model,
+            make : make,
+            limit: limit,
+            page : page,
+            fuel_type: fuel,
+            year : year
         },
         headers: {
             'X-RapidAPI-Key': process.env.X_RapidAPI_Key,

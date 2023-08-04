@@ -3,7 +3,7 @@
 import {singleCarProps} from '@/types'
 import Image from 'next/image';
 import React, {useState} from 'react'
-import heroImage from '../public/hero.png'
+import heroImage from '../public/car.png'
 import {CustomButton, Model} from '.';
 import {calculateCarRent} from '@/api/Car/calculateRent';
 import {BsFuelPumpFill} from "react-icons/bs"
@@ -41,12 +41,12 @@ const CarCard = ({car} : {
         <>
         <div className='car-card w-[325px]'>
 
-            <div className='car-car__image flex justify-center w-full py-10'>
+            <div className='car-car__image flex justify-center w-full py-5'>
                 <Image
                     src={heroImage}
                     alt={make}
-                    width={180}
-                    height={100}
+                    width={200}
+                    height={150}
                     className='object-contain'></Image>
             </div>
 

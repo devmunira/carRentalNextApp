@@ -3,10 +3,16 @@
 import React from 'react'
 import {CustomButton} from './'
 import Image from 'next/image';
+import scroll from "react-scroll"
 
 const Hero = () => {
     // handle Scroll func for hero  section btn
-    const handleScroll = () => {}
+    const handleScroll = () => {
+        const section = document.getElementById('productSection');
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
     return (
         <div className='hero bg-secondary-orange' style={{clipPath : 'polygon(0 0, 100% 0, 100% 83%, 0% 100%)'
     }}>

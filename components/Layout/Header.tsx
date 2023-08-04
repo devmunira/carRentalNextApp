@@ -1,7 +1,8 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
-import { CustomButton } from ".."
-
+import { CustomButton , Book } from ".."
+import {useState} from "react"
 
 const Header = () => {
   return (
@@ -22,7 +23,7 @@ const Header = () => {
             customStyles="text-primary-green font-bold rounded-full min-w-[130px]"
             btnType="button"
             ></CustomButton>
-        </div> 
+        </div>
     </div>
   )
 }

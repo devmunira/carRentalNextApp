@@ -54,6 +54,22 @@ export const manufacturers = [
     { title: "2022", value: "2022" },
     { title: "2023", value: "2023" },
   ];
+
+
+  export const transmissions = [
+    {
+      title: "Transmission",
+      value: "",
+    },
+    {
+      title: "Manual",
+      value: "m",
+    },
+    {
+      title : "Automatic",
+      value : "a",
+    }
+  ]
   
   export const fuels = [
     {
@@ -68,6 +84,10 @@ export const manufacturers = [
       title: "Electricity",
       value: "Electricity",
     },
+    {
+      title : "Diesel",
+      value: "Diesel"
+    }
   ];
   
   export const footerLinks = [

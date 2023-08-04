@@ -7,6 +7,8 @@ import FilterArea from './FilterArea';
 import CarCard from './CarCard';
 import CustomAutoSelect from './CustomAutoSelect';
 import Model from './Model';
+import SeeMore from "./SeeMore"
+import Book from "./BookModel"
 
 
 export {
@@ -18,5 +20,7 @@ export {
     FilterArea,
     CustomAutoSelect,
     CarCard,
-    Model
+    Model,
+    SeeMore,
+    Book
 }
