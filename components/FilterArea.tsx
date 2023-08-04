@@ -29,7 +29,7 @@ export default function FilterArea({ title, options }: filterProps) {
         value={selected}
         onChange={(e) => {
           setSelected(e);
-          updateQueryParams(title.toLowerCase() , e.value)
+          updateQueryParams(title.toLowerCase() , e.value.toString())
         }}
       >
         <div className='relative w-fit z-10'>
