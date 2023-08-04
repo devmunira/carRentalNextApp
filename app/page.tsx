@@ -14,7 +14,6 @@ export default async function Home({searchParams} : homePgaeSearchProps) {
     limit : searchParams.limit || 12,
     page : searchParams.page || 1,
     model : searchParams.model || '',
-    transmission : searchParams.transmission || '',
   });
 
 
